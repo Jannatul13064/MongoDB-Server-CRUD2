@@ -9,11 +9,6 @@ const port = process.env.PORT || 5000;
 app.use(cors());
 
 
-//UserName: mydbuser2
-//Passsword: 2D9iGuYHAWkLwTPc
-
-
-
 const uri = `mongodb+srv://${process.env.USER_NAME}:${process.env.USER_PASS}@recapcluster.qfb1b.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
 
